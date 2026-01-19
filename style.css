@@ -24,18 +24,19 @@ body {
 }
 
 .navbar img.logo {
-  width: 80px;
+  width: 100px;
   margin-bottom: 15px;
 }
 
 .nav-title {
-  font-size: 1.8rem;
+  font-size: 5rem;
   font-weight: 600;
 }
 
 .navbar p {
   color: #555;
   margin-top: 5px;
+  font-size: 2rem;
 }
 
 /* ===== CONTENEDOR DE TARJETAS ===== */

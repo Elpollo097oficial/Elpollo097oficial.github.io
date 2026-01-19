@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com');
+
+body {
+    overflow-x: hidden; /* Oculta solo la barra de desplazamiento horizontal */
+}
+
+.navbar {
+    display: flex;          /* Activa Flexbox */
+    flex-direction: column; /* Alinea logo y texto uno sobre otro */
+    align-items: center;    /* Centra horizontalmente */
+    justify-content: center;/* Centra verticalmente */
+    padding: 20px;
+    width: 100%;
+}
+
+.logo {
+    width: 70%;
+    max-width: 250px;       /* Evita que la imagen se deforme en pantallas grandes */
+    height: auto;
+    margin-bottom: 10px;    /* Espacio entre logo y texto */
+}
+
+.nav-title {
+    font-size: clamp(24px, 5vw, 45px); /* Tamaño de fuente responsivo */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #000;
+    margin: 0;
+}
+
+.Contenido-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Esto centra CADA div de datapack horizontalmente */
+  gap: 20px;
+}
+
+.Contenido-bar > div {
+  width: 100%;
+  max-width: 600px; /* Esto da un ancho máximo para la justificación */
+}
+
+.Contenido-bar h2 {
+  color: #ffcc00;
+  font-size: 2rem;
+  margin-bottom: 10px;    /* Separa el título del párrafo */
+  font-family: sans-serif;
+}
+
+.Contenido-bar p {
+  text-align: justify; /* Mantiene el texto justificado */
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+

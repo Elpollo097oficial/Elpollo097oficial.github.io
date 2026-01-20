@@ -97,3 +97,27 @@ body {
     padding: 30px 15px;
   }
 }
+
+#reloj {
+  position: fixed;
+  bottom: 20px;
+  left: 7%;
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+#fecha {
+  position: fixed;
+  bottom: 20px;
+  right: 7%;
+  font-size: 22px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  z-index: 1000;
+}

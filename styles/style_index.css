@@ -181,7 +181,7 @@ body {
 }
 
 .botones button:hover {
-  transform: scale(1.01);        /* se agranda */
-  background-color: #4f46e5;    /* cambia color */
+  transform: scale(1.01);
+  background-color: #4f46e5;
   color: white;
 }

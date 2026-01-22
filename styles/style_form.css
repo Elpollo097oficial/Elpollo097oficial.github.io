@@ -1,10 +1,9 @@
-
 .Forms {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh; /* centra verticalmente */
-  background-color: #f2f2f2; /* fondo de la página */
+  background-color: #f2f2f2;
 }
 
 .forms_colums {
@@ -12,7 +11,7 @@
   flex-direction: column;
   gap: 15px; /* espacio entre elementos */
   padding: 25px;
-  background-color: #ffffff; /* fondo del formulario */
+  background-color: #ffffff;
   border-radius: 10px;
   width: 320px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -83,7 +82,7 @@
 }
 
 .hub button:hover {
-  transform: scale(1.01);        /* se agranda */
-  background-color: #4f46e5;    /* cambia color */
+  transform: scale(1.01);
+  background-color: #4f46e5;
   color: white;
 }

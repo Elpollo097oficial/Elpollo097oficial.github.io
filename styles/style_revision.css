@@ -1,8 +1,7 @@
-/* Definición de variables de color sugeridas (si no las tienes ya) */
 :root {
   --blocks_color: #ffffff;
-  --color-accepted: #10B981; /* Verde esmeralda */
-  --color-denied: #EF4444;   /* Rojo fuerte */
+  --color-accepted: #10B981;
+  --color-denied: #EF4444;
   --text-color: #1F2937;
   --shadow-light: rgba(0,0,0,0.08);
   --shadow-hover: rgba(0,0,0,0.12);
@@ -61,7 +60,7 @@
 .main-title {
     grid-column: 1 / -1; /* Ocupa todo el ancho */
     font-size: 1.5rem; /* Más grande */
-    font-weight: 800; /* Más peso visual */
+    font-weight: 800;
     margin-bottom: 10px;
     color: var(--text-color);
 }
@@ -107,7 +106,7 @@
 .full-width {
     grid-column: 1 / -1;
     display: block; /* Vuelve a ser un bloque para que el párrafo caiga debajo de la etiqueta */
-    margin-top: 15px; /* Espacio superior */
+    margin-top: 15px;
 }
 
 .full-width p {
@@ -116,19 +115,19 @@
 }
 
 .main-header {
-    background: var(--blocks_color, #ffffff); /* Fondo blanco para el header */
+    background: var(--blocks_color, #ffffff);
     box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Sombra sutil */
-    padding: 15px 5%; /* Espaciado interno, responsive con % */
+    padding: 15px 5%;
     display: flex; /* Alineación flexible */
     justify-content: space-between; /* Espacia el botón y el título */
-    align-items: center; /* Centrado vertical */
+    align-items: center;
     position: sticky; /* Se mantiene visible al hacer scroll */
     top: 0;
     z-index: 1000; /* Asegura que esté por encima del contenido */
 }
 
 .main-header h1 {
-    margin: 0; /* Elimina márgenes por defecto del h1 */
+    margin: 0;
     font-size: 1.2rem;
     color: var(--text-color, #1F2937);
 }
@@ -151,5 +150,5 @@
 }
 
 .icon-arrow {
-    font-size: 1rem; /* Ajusta el tamaño del emoji */
+    font-size: 1rem;
 }

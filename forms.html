@@ -7,39 +7,24 @@
   <link rel="icon" href="source/icon6.png" type="image/png">
 </head>
 <body>
-      <header class="hub">
-        <h1 class="titulo">Formulario Datapack / Texture Pack</h1>
-        <button class="regresar" onclick="window.location.href='index.html'">Regresar</button>
-      </header>
+    <header class="hub">
+      <h1 class="titulo">Formulario Datapack / Texture Pack</h1>
+      <button class="regresar" onclick="window.location.href='index.html'">Regresar</button>
+    </header>
   <div class="Forms">
-  <form 
-    action="https://formspree.io/f/xgoobvgg" 
-    method="POST" 
-    class="forms_colums"
-  >
-    <label>
+    <form action="https://formspree.io/f/xgoobvgg" method="POST" class="forms_colums">
+      <label>
       ¿Cuál es tu nombre?
-      <input 
-        type="text" 
-        id="customer-name" 
-        name="customer-name" 
-        placeholder="Tu nombre"
-        required
-      >
-    </label>
-
-    <label>
+      <input type="text" id="customer-name" name="customer-name" placeholder="Tu nombre" required>
+      </label>
+      <label>
       Describe tu idea:
-      <textarea 
-        name="message" 
-        placeholder="Escribe aquí tu idea..."
-        required
-      ></textarea>
-    </label>
+      <textarea name="message" placeholder="Escribe aquí tu idea..." required></textarea>
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
 
-    <button type="submit">Enviar</button>
-  </form>
-</div>
   <script src="scripts/script_form.js"></script>
 </body>
 </html>

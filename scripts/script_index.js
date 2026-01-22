@@ -1,6 +1,7 @@
 /**
  * @param {object} Data - Los datos del datapack
  */
+
 function createReviewCard(Data) {
     const card = document.createElement('div');
     card.classList.add('Logics'); 
@@ -11,7 +12,7 @@ function createReviewCard(Data) {
         <p> ${Data.descripcion} </p>
         <p class="Versiones"> Versiones: ${Data.versiones} </p>
     `;
-
+    
     return card;
 }
 

@@ -1,0 +1,155 @@
+/* Definición de variables de color sugeridas (si no las tienes ya) */
+:root {
+  --blocks_color: #ffffff;
+  --color-accepted: #10B981; /* Verde esmeralda */
+  --color-denied: #EF4444;   /* Rojo fuerte */
+  --text-color: #1F2937;
+  --shadow-light: rgba(0,0,0,0.08);
+  --shadow-hover: rgba(0,0,0,0.12);
+}
+
+.Forms_contendor {
+    justify-items: center;
+}
+
+.Forms_contendor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 60px;
+}
+
+/* ===== TARJETAS ===== */
+.Forms_contendor > div {
+  width: 90%;
+  max-width: 650px;
+  padding: 25px;
+  background: var(--blocks_color);
+  border-radius: 14px;
+  box-shadow: 0 10px 25px var(--shadow-light);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+  border-left: 6px solid transparent;
+}
+
+.Forms_contendor > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px var(--shadow-hover);
+}
+
+/* Estilo para tarjetas aceptadas */
+.status-accepted {
+    border-left-color: var(--color-accepted);
+}
+
+/* Estilo para tarjetas denegadas (si implementas esa clase) */
+.status-denied {
+    border-left-color: var(--color-denied);
+}
+
+
+/* Diseño de cuadrícula mejorado a una sola columna */
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas para info básica */
+  gap: 15px 20px; /* Menos espacio vertical, más horizontal */
+  align-items: center;
+  text-align: left;
+}
+
+/* El título principal ahora es grande y ocupa las dos columnas */
+.main-title {
+    grid-column: 1 / -1; /* Ocupa todo el ancho */
+    font-size: 1.5rem; /* Más grande */
+    font-weight: 800; /* Más peso visual */
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 600;
+  white-space: nowrap;
+  color: #6B7280;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+/* Estilo para el texto de estado, sin usar imagen */
+.status-text {
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: var(--blocks_color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+/* Colores dinámicos para el estado */
+.status-accepted .status-text {
+    background-color: var(--color-accepted);
+}
+
+.status-denied .status-text {
+    background-color: var(--color-denied);
+}
+
+/* El comentario ahora ocupa toda la fila debajo de la info básica */
+.full-width {
+    grid-column: 1 / -1;
+    display: block; /* Vuelve a ser un bloque para que el párrafo caiga debajo de la etiqueta */
+    margin-top: 15px; /* Espacio superior */
+}
+
+.full-width p {
+    margin-top: 5px;
+    color: var(--text-color);
+}
+
+.main-header {
+    background: var(--blocks_color, #ffffff); /* Fondo blanco para el header */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Sombra sutil */
+    padding: 15px 5%; /* Espaciado interno, responsive con % */
+    display: flex; /* Alineación flexible */
+    justify-content: space-between; /* Espacia el botón y el título */
+    align-items: center; /* Centrado vertical */
+    position: sticky; /* Se mantiene visible al hacer scroll */
+    top: 0;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.main-header h1 {
+    margin: 0; /* Elimina márgenes por defecto del h1 */
+    font-size: 1.2rem;
+    color: var(--text-color, #1F2937);
+}
+
+.back-button {
+    background-color: transparent;
+    border: 1px solid #D1D5DB;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.back-button:hover {
+    background-color: #F3F4F6;
+    border-color: #9CA3AF;
+}
+
+.icon-arrow {
+    font-size: 1rem; /* Ajusta el tamaño del emoji */
+}
